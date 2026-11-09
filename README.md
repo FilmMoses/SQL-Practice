@@ -108,8 +108,8 @@ clean_cstr_telemetry_export.csv   # Sanitized flat export for Excel / Tableau / 
 fleet_monitor.db                  # Self-healing SQLite database (Tables & Views)
 table.sql                         # Setup Command (CREATE TABLE)
 commands.sql               # DDL, corrupted ingestion, Data Quality Scorecard & Views
-csv_to_sqlite.py                  # Reusable utility to convert raw CSVs into SQLite tables
-cstr_ml_simulation.py             # Physics-informed ML classifier & SciPy ODE Digital Twin
+Test.py                  # First Physics-ML test
+Moretests.py             # Physics-informed ML classifier & SciPy ODE Digital Twin
 README.md
 ```
 
