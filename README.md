@@ -103,16 +103,14 @@ Integrating forward from the **`08:03:00` ML Alert** using `scipy.integrate.solv
 ## 6. Repository Structure & Quickstart
 
 ```text
-├── data/
-│   ├── clean_cstr_telemetry_export.csv   # Sanitized flat export for Excel / Tableau / PowerBI
-│   └── fleet_monitor.db                  # Self-healing SQLite database (Tables & Views)
-├── sql/
-│   └── cstr_eda_lesson.sql               # DDL, corrupted ingestion, Data Quality Scorecard & Views
-├── src/
-│   ├── csv_to_sqlite.py                  # Reusable utility to convert raw CSVs into SQLite tables
-│   ├── fix_pipeline.py                   # Idempotent schema verifier & sqlite_master diagnostic
-│   └── cstr_ml_simulation.py             # Physics-informed ML classifier & SciPy ODE Digital Twin
-└── README.md
+
+clean_cstr_telemetry_export.csv   # Sanitized flat export for Excel / Tableau / PowerBI
+fleet_monitor.db                  # Self-healing SQLite database (Tables & Views)
+table.sql                         # Setup Command (CREATE TABLE)
+commands.sql               # DDL, corrupted ingestion, Data Quality Scorecard & Views
+csv_to_sqlite.py                  # Reusable utility to convert raw CSVs into SQLite tables
+cstr_ml_simulation.py             # Physics-informed ML classifier & SciPy ODE Digital Twin
+README.md
 ```
 
 ### How to Run Locally in VS Code
